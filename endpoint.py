@@ -3,34 +3,25 @@ import json
 
 # URL for the web service, should be similar to:
 # 'http://8530a665-66f3-49c8-a953-b82a2d312917.eastus.azurecontainer.io/score'
-scoring_uri = 'http://044421e5-ffb9-4640-863b-22a90de25c36.southcentralus.azurecontainer.io/score'
+scoring_uri = 'http://localhost:9000/score'#'http://7c8b9eee-fd6f-42da-81df-3f422e6bac5d.eastus.azurecontainer.io/score'
 # If the service is authenticated, set the key or token
-key = 'Jf3onIMLPJRoWOBxdTEzobIFee0HR92x'
+key = ''
 
 # Two sets of data to score, so we get two results back
 data = {"data":
         [
           {
-            'job': "example_value",
-            'marital': "example_value",
-            'education': "example_value",
-            'default': "example_value",
-            'housing': "example_value",
-            'loan': "example_value",
-            'contact': "example_value",
-            'month': "example_value",
-            'day_of_week': "example_value",
-            'duration': "0",
-            'campaign': "0",
-            'pdays': "0",
-            'previous': "0",
-            'poutcome': "example_value",
-            'emp.var.rate': "0",
-            'cons.price.idx': "0",
-            'cons.conf.idx': "0",
-            'euribor3m': "0",
-            'nr.employed': "0",
-            'y': "example_value",
+            'id': "0",
+            'gender': "0",
+            'age': "0",
+            'hypertension': "0",
+            'heart_disease': "0",
+            'ever_married': False,
+            'work_type': "0",
+            'Residence_type': "0",
+            'avg_glucose_level': "0",
+            'bmi': "0",
+            'smoking_status': "0",
         },
       ]
     }
