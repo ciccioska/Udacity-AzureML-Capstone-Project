@@ -1,3 +1,5 @@
+*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+
 # Udacity Machine Learning Engineer - Capstone project
 
 This project is the capstone project related to the Azure ML Engineer path, this is the final project.
@@ -93,7 +95,7 @@ We set the metric to `Accuracy` and metric goal to MAXIMIZE and we got an accura
 ![hyperdrive3](images/hyperdrive3.png)
 
 ## Model Deployment
-We deployed the model, enabling Application insight, but without authentication. WARNING: this is a test but in production enable authentication is the better choice.
+We deployed the best model, the hyper drive one, enabling Application insight, but without authentication. WARNING: this is a test but in production enable authentication is the better choice.
 
 ![model1](images/model1.png)
 
@@ -109,3 +111,4 @@ We deployed the model, enabling Application insight, but without authentication.
 
 ## Screen Recording
 
+[Screencast](https://youtu.be/rv41aeXLQ3A)
