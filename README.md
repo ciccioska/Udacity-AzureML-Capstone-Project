@@ -95,13 +95,19 @@ We set the metric to `Accuracy` and metric goal to MAXIMIZE and we got an accura
 ![hyperdrive3](images/hyperdrive3.png)
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 We deployed the model, enabling Application insight, but without authentication. WARNING: this is a test but in production enable authentication is the better choice.
 
-![hyperdrive1](images/hyperdrive1.png)
+![model1](images/model1.png)
+
+![model2](images/model2.png)
+
+![model3](images/model3.png)
+
+![model4](images/model4.png)
+
+![model5](images/model5.png)
+
+![model6](images/model6.png)
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+
