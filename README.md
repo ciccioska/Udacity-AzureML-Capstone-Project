@@ -39,7 +39,15 @@ The task involve to predict strokes based on the different type of diseases, in 
 We are going to find the best formant ML between HyperDriveParameter and AutoML.
 
 ### Access
-The dataset is free and it can be downloade from [Kaggle](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset), but I downloaded it and useed it in Azure ML.
+The dataset is free and it can be downloade from [Kaggle](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset), but I downloaded it and saved it into my Github repo and used it in Azure ML.
+
+I loaded the dataset and register it inside my workspace using the code below:
+
+![dataset1](images/dataset1.png)
+
+and the it will be visible in the Dataset section as described below:
+
+![dataset2](images/dataset2.png)
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
@@ -109,6 +117,16 @@ We deployed the best model, the hyper drive one, enabling Application insight, b
 
 ![model6](images/model6.png)
 
+Here is the status of the deployed model in ML Studio:
+
+![model7](images/model7.png)
+
+![model8](images/model8.png)
+
 ## Screen Recording
 
 [Screencast](https://youtu.be/rv41aeXLQ3A)
+
+## Future improvement
+
+In the future can be increased the number of the iteration to fit best the model to the data, also we need more data indide the dataset because 5000 records are a small dataset.
