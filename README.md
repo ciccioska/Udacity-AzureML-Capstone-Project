@@ -81,6 +81,7 @@ We tried to perform different metric but this one we got the best result with th
 
 We can try to improve increasing cross-correlation and experiment timeout because we tried accuracy as a metric with the worst result.
 
+![best_model_automl](images/best_model_automl.png)
 
 ![automl1](images/automl1.png)
 
@@ -94,7 +95,9 @@ We tune the follow hyper drive parameters:
 - Max iteration:   Maximum number of iterations to converge (50,100,150,200,250)
 
 ### Results
-We set the metric to `Accuracy` and metric goal to MAXIMIZE and we got an accuracy of ~95%.
+We set the metric to `Accuracy` and metric goal to MAXIMIZE and we got an accuracy of ~95%. The parametrs of the best model are reported below:
+
+![best_model_h](images/best_model_h.png)
 
 ![hyperdrive1](images/hyperdrive1.png)
 
