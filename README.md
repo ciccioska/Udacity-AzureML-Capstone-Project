@@ -3,7 +3,7 @@
 # Udacity Machine Learning Engineer - Capstone project
 
 This project is the capstone project related to the Azure ML Engineer path, this is the final project.
-The topic of the project will be to train a model with AutoML, train a model with HyperParameter and finally deploy the best model between the mentioned above.
+The topic of the project will be to train a model with AutoML, train a model with HyperDrive and finally deploy the best model between the mentioned above.
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
@@ -50,7 +50,11 @@ and the it will be visible in the Dataset section as described below:
 ![dataset2](images/dataset2.png)
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+We tried to perform different metric but this one we got the best result with the `AUC_weighted` metric. For the training as mentioned above, we use:
+- primary_metric: AUC_weighted - calculate arithmetic mean of the score for each class, weighted by the number of true instances in each class;
+- n_cross_validations: 2 - number of cross validation to execute in this case 2;
+- experiment_timeout_minutes: 30 - max experiment timeout.
+
 AutoML configuration is exposed below:
 ```
 automl_settings = {
@@ -74,19 +78,19 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 ```
 
 ### Results
-We tried to perform different metric but this one we got the best result with the `AUC_weighted` metric. For the training as mentioned above, we use:
-- primary_metric: AUC_weighted;
-- n_cross_validations: 2;
-- experiment_timeout_minutes: 30
 
 We can try to improve increasing cross-correlation and experiment timeout because we tried accuracy as a metric with the worst result.
 
+_Best automl model_
 ![best_model_automl](images/best_model_automl.png)
 
+The best automl pipeline was VotingEnsemble:
 ![automl1](images/automl1.png)
 
+_Best run_
 ![automl2](images/automl2.png)
 
+_Best run curves_
 ![automl3](images/automl3.png)
 
 ## Hyperparameter Tuning
@@ -110,20 +114,25 @@ We deployed the best model, the hyper drive one, enabling Application insight, b
 
 ![model1](images/model1.png)
 
+We deployed the model first on a Local Service to try verify the correct execution, we provided a script file `endopoint.py` where it is possible to test locally:
 ![model2](images/model2.png)
 
+Here we create a sample data input string, covert it in JSON and put a header to the REST call to consume the endpoint, output 1 if the data in input satisfy the model:
 ![model3](images/model3.png)
 
+We deployed the model on a Remote Service:
 ![model4](images/model4.png)
 
+Here we create a sample data input string, covert it in JSON and put a header to the REST call to consume the endpoint, output 1 if the data in input satisfy the model:
 ![model5](images/model5.png)
 
+Delete not used resources:
 ![model6](images/model6.png)
 
 Here is the status of the deployed model in ML Studio:
-
 ![model7](images/model7.png)
 
+Endpoint logs:
 ![model8](images/model8.png)
 
 ## Screen Recording
