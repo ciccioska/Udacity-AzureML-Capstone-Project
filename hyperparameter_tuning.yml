@@ -1,0 +1,6 @@
+name: hyperparameter_tuning
+dependencies:
+- pip:
+  - azureml-sdk
+  - scikit-learn
+  - pandas
