@@ -6,7 +6,6 @@ This project is the capstone project related to the Azure ML Engineer path, this
 The topic of the project will be to train a model with AutoML, train a model with HyperDrive and finally deploy the best model between the mentioned above.
 
 ## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
 
