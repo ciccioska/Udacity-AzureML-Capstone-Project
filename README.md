@@ -83,6 +83,16 @@ We can try to improve increasing cross-correlation and experiment timeout becaus
 _Best automl model_
 ![best_model_automl](images/best_model_automl.png)
 
+The estimators related to the best autoML model, the `RandomForestClassifier` for example has these parameters:
+- min_samples_leaf=0.01
+- max_features=None
+- min_samples_leaf=0.01
+- min_samples_split=0.056842105263157895
+- n_estimators=50 
+- n_jobs=1
+![best_model1](images/best_model1.png)
+![best_model2](images/best_model2.png)
+
 The best automl pipeline was VotingEnsemble:
 ![automl1](images/automl1.png)
 
@@ -91,6 +101,7 @@ _Best run_
 
 _Best run curves_
 ![automl3](images/automl3.png)
+
 
 ## Hyperparameter Tuning
 We tune the follow hyper drive parameters:
